@@ -1,0 +1,47 @@
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: .5px solid #000000;
+  background-color: #ffffff;
+
+  min-height: 155px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 48px; height: 48px;
+    background: url('../../../../public/pin.svg') 50% 50% no-repeat; background-size: 100%;
+    position: absolute;
+    left: calc(50% - 24px);
+    top: -30px;
+    transform: scaleX(-1);
+    z-index: 4;
+  }
+
+  .flex {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .time {
+    font-size: 12px;
+    color: #777777
+  }
+  .content {
+    font-size: 14px;
+    word-break: break-word;
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+
+  }
+}

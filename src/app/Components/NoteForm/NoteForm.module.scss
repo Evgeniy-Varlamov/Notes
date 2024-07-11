@@ -1,0 +1,58 @@
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  .form {
+
+    padding: 15px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: .5px solid #000000;
+    background-color: #FFE4C4;
+
+    .title, .content  {
+      border: 1px solid #000000;
+      padding: 5px;
+    }
+
+    .title {
+      font-size: 100%;
+      font-weight: 700;
+    }
+
+    .content {
+      font-size: 14px;
+      resize: none;
+      height: 200px;
+    }
+
+    .btn {
+      background-color: #000000;
+      font-weight: 700;
+      color: #ffffff;
+      padding: 5px;
+      min-height: 50px;
+      &:disabled {
+        background-color: #aaaaaa
+      }
+    }
+    .back {
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+      background-color: #ffffff;
+      font-weight: 700;
+      color: #000000;
+      padding: 5px;
+      min-height: 50px;
+      border: 0.5px solid #000000
+    }
+  }
+}

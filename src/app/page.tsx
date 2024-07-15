@@ -1,10 +1,3 @@
-// 'use client'
-// import {useEffect, useState} from 'react';
-// import {Provider, useDispatch} from 'react-redux';
-// import axios from 'axios';
-// import { setNotes } from '../../store';
-//
-// import NoteList from "@/app/Components/NoteList";
 import {getAllNote} from "@/app/logic/api";
 import NoteList from "@/app/Components/NoteList/NoteList";
 import {Context} from "@/app/logic/context";
